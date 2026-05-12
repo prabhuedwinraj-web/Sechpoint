@@ -10,9 +10,8 @@ const FeatureArt3 = () => {
     <div ref={ref} style={{ position: 'relative', height: '100%' }}>
       <div style={{
         position: 'absolute', left: 0, top: 20, width: '90%', zIndex: 1,
-        opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(60px)',
-        transition: `opacity 0.9s ${ease}, transform 0.9s ${ease}`,
+        transition: `transform 0.9s ${ease}`,
       }}>
         <CodePanel title="threats.log" lang="log" rotate={-2}>
 {`[`}<C.c>{`02:14:08`}</C.c>{`] `}<C.f>detect</C.f>{`  anomaly 3.2σ — svc.exports
@@ -25,9 +24,8 @@ const FeatureArt3 = () => {
       </div>
       <div style={{
         position: 'absolute', right: -10, bottom: 0, width: '78%', zIndex: 2,
-        opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(60px)',
-        transition: `opacity 0.9s ${ease} 0.18s, transform 0.9s ${ease} 0.18s`,
+        transition: `transform 0.9s ${ease} 0.18s`,
       }}>
         <DashboardCard rotate={2.5} />
       </div>

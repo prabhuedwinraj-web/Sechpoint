@@ -10,17 +10,15 @@ const FeatureArt2 = () => {
     <div ref={ref} style={{ position: 'relative', height: '100%' }}>
       <div style={{
         position: 'absolute', right: 0, top: 0, width: '88%', zIndex: 1,
-        opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(60px)',
-        transition: `opacity 0.9s ${ease}, transform 0.9s ${ease}`,
+        transition: `transform 0.9s ${ease}`,
       }}>
         <DashboardCard rotate={-1.5} />
       </div>
       <div style={{
         position: 'absolute', left: -10, bottom: 0, width: '78%', zIndex: 2,
-        opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(60px)',
-        transition: `opacity 0.9s ${ease} 0.18s, transform 0.9s ${ease} 0.18s`,
+        transition: `transform 0.9s ${ease} 0.18s`,
       }}>
         <CodePanel title="policy.cipher" rotate={1.8} lang="cipher">
 {`policy `}<C.f>kyc.read.only</C.f>{` {
