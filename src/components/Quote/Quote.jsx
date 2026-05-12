@@ -2,7 +2,7 @@ import { Shield } from '../../icons';
 
 const Quote = () => (
   <section style={{ background: 'var(--ink)', color: '#e7eaee' }}>
-    <div style={{ maxWidth: 980, margin: '0 auto', padding: '120px 24px', textAlign: 'center' }}>
+    <div style={{ maxWidth: 980, margin: '0 auto', padding: '120px 24px 200px', textAlign: 'center' }}>
       <Shield style={{ color: 'var(--cyan)' }}/>
       <p style={{
         fontSize: 30,
