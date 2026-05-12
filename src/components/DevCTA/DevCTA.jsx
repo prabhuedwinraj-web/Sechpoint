@@ -45,20 +45,39 @@ const DevCTA = () => (
             gap: 8,
           }}>Explore platform <Arrow/></button>
         </div>
-        <div style={{ position: 'relative', height: 276 }}>
-          <svg viewBox="0 0 360 240" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
-            <g transform="translate(180,120)">
+        <div style={{ position: 'relative', height: 320 }}>
+          <svg viewBox="0 0 380 300" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
+            <g transform="translate(190,145)">
+              {/* Spoke lines from diamond edge to nodes */}
               {Array.from({ length: 12 }).map((_, i) => {
                 const a = (i / 12) * Math.PI * 2;
-                const x = Math.cos(a) * 90, y = Math.sin(a) * 60;
-                return <circle key={i} cx={x} cy={y} r="6" fill="#1f2326" stroke="#2a2e32"/>;
+                const nx = Math.cos(a) * 118, ny = Math.sin(a) * 88;
+                const ex = Math.cos(a) * 50,  ey = Math.sin(a) * 32;
+                return <line key={'l'+i} x1={ex} y1={ey} x2={nx} y2={ny} stroke="#46504a" strokeWidth="1.2"/>;
               })}
-              <path d="M -36 0 L 0 -22 L 36 0 L 0 22 Z" fill="#22e0c8" opacity="0.18"/>
-              <path d="M -22 0 L 0 -14 L 22 0 L 0 14 Z" fill="#22e0c8"/>
-              <path d="M -10 0 L 0 -6 L 10 0 L 0 6 Z" fill="#0b0d0c"/>
+
+              {/* Outer glow ring */}
+              <path d="M 0,-75 L 75,0 L 0,75 L -75,0 Z" fill="#22e0c8" opacity="0.10"/>
+
+              {/* Isometric depth — left face */}
+              <path d="M -65,0 L 0,42 L 0,68 L -65,26 Z" fill="#0a4038"/>
+              {/* Isometric depth — right face */}
+              <path d="M 65,0 L 0,42 L 0,68 L 65,26 Z" fill="#061e1a"/>
+
+              {/* Top diamond face */}
+              <path d="M 0,-42 L 65,0 L 0,42 L -65,0 Z" fill="#22e0c8"/>
+
+              {/* Inner black diamond */}
+              <path d="M 0,-20 L 20,0 L 0,20 L -20,0 Z" fill="#0b0d0c"/>
+
+              {/* Nodes */}
               {Array.from({ length: 12 }).map((_, i) => {
                 const a = (i / 12) * Math.PI * 2;
-                return <line key={'l' + i} x1={Math.cos(a) * 22} y1={Math.sin(a) * 14} x2={Math.cos(a) * 84} y2={Math.sin(a) * 56} stroke="#2a2e32" strokeWidth="1"/>;
+                const x = Math.cos(a) * 118, y = Math.sin(a) * 88;
+                return (
+                  <circle key={i} cx={x} cy={y} r="8"
+                    fill="#2a2e30" stroke="#46504a" strokeWidth="1.5"/>
+                );
               })}
             </g>
           </svg>
