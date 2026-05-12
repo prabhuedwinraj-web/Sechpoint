@@ -1,10 +1,20 @@
+import { useScrollReveal } from '../../hooks/useScrollReveal';
 import CodePanel, { C } from '../ui/CodePanel';
 import DashboardCard from '../ui/DashboardCard';
 
-const FeatureArt1 = () => (
-  <div style={{ position: 'relative', height: '100%' }}>
-    <div style={{ position: 'absolute', left: 0, top: 20, width: '90%', zIndex: 1 }}>
-      <CodePanel title="ingest.ts" rotate={-1.5}>
+const ease = 'cubic-bezier(0.16,1,0.3,1)';
+
+const FeatureArt1 = () => {
+  const [ref, visible] = useScrollReveal(0.2);
+  return (
+    <div ref={ref} style={{ position: 'relative', height: '100%' }}>
+      <div style={{
+        position: 'absolute', left: 0, top: 20, width: '90%', zIndex: 1,
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0)' : 'translateY(60px)',
+        transition: `opacity 0.9s ${ease}, transform 0.9s ${ease}`,
+      }}>
+        <CodePanel title="ingest.ts" rotate={-1.5}>
 {`import { Sechpoint } from `}<C.s>'@sechpoint/sdk'</C.s>{`
 const vault = `}<C.k>new</C.k>{` `}<C.f>Sechpoint</C.f>{`({ region: `}<C.s>'us-east-1'</C.s>{` })
 
@@ -17,12 +27,18 @@ const vault = `}<C.k>new</C.k>{` `}<C.f>Sechpoint</C.f>{`({ region: `}<C.s>'us-e
 })
 
 `}<C.k>return</C.k>{` { id: token.alias }`}
-      </CodePanel>
+        </CodePanel>
+      </div>
+      <div style={{
+        position: 'absolute', right: -10, bottom: 0, width: '80%', zIndex: 2,
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0)' : 'translateY(60px)',
+        transition: `opacity 0.9s ${ease} 0.18s, transform 0.9s ${ease} 0.18s`,
+      }}>
+        <DashboardCard rotate={2} />
+      </div>
     </div>
-    <div style={{ position: 'absolute', right: -10, bottom: 0, width: '80%', zIndex: 2 }}>
-      <DashboardCard rotate={2}/>
-    </div>
-  </div>
-);
+  );
+};
 
 export default FeatureArt1;
