@@ -44,7 +44,7 @@ const Hero = () => {
           fontWeight: 600,
           margin: '0 0 22px',
         }}>
-          Built to secure and optimize national&#8209;scale{' '}
+          Secure and optimize national&#8209;scale{' '}
           <em style={{ fontStyle: 'normal', position: 'relative', display: 'inline-block' }}>
             networks.
             <svg style={{ position: 'absolute', left: -4, right: -4, bottom: -6, width: 'calc(100% + 8px)' }} viewBox="0 0 400 14" preserveAspectRatio="none">
@@ -53,10 +53,10 @@ const Hero = () => {
           </em>
         </h1>
         <p style={{ fontSize: 17, lineHeight: 1.5, color: '#3a3e42', maxWidth: 520, margin: '0 0 28px' }}>
-          SechPoint helps telecoms, ISPs, and national cyber teams gain real-time visibility, control encrypted traffic, strengthen cyber defense, and improve subscriber experience through DPI-powered intelligence.
+          SechPoint helps telecoms, ISPs, and cyber teams see, control, and protect network traffic with DPI-powered intelligence.
         </p>
         <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 28px', display: 'flex', gap: 18, flexWrap: 'wrap' }}>
-          {['High-speed AIML-powered DPI','Cybersecurity and IP/URL intelligence','Subscriber analytics and traffic orchestration'].map((t, i) => (
+          {['High-speed AI/ML DPI','Cybersecurity & IP/URL intelligence','Subscriber analytics & traffic control'].map((t, i) => (
             <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14 }}>
               <span style={{
                 width: 18, height: 18, borderRadius: 99,
