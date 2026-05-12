@@ -13,19 +13,19 @@ const FeatureArt1 = () => {
         transform: visible ? 'translateY(0)' : 'translateY(60px)',
         transition: `transform 0.9s ${ease}`,
       }}>
-        <CodePanel title="ingest.ts" rotate={-1.5}>
-{`import { Sechpoint } from `}<C.s>'@sechpoint/sdk'</C.s>{`
-const vault = `}<C.k>new</C.k>{` `}<C.f>Sechpoint</C.f>{`({ region: `}<C.s>'us-east-1'</C.s>{` })
+        <CodePanel title="classify.ts" rotate={-1.5}>
+{`import { Sechpoint } from `}<C.s>'@sechpoint/dpi-sdk'</C.s>{`
+const probe = `}<C.k>new</C.k>{` `}<C.f>Sechpoint</C.f>{`({ region: `}<C.s>'us-east-1'</C.s>{` })
 
-`}<C.c>{`// tokenize a customer record`}</C.c>{`
-`}<C.k>const</C.k>{` token = `}<C.k>await</C.k>{` vault.`}<C.f>tokenize</C.f>{`({
-  ssn:    `}<C.s>'401-22-9087'</C.s>{`,
-  email:  `}<C.s>'avery@northwind.io'</C.s>{`,
-  scope:  [`}<C.s>'pii'</C.s>{`, `}<C.s>'us'</C.s>{`],
-  policy: `}<C.s>'kyc.read.only'</C.s>{`,
+`}<C.c>{`// classify a subscriber flow`}</C.c>{`
+`}<C.k>const</C.k>{` result = `}<C.k>await</C.k>{` probe.`}<C.f>classify</C.f>{`({
+  flow:    `}<C.s>'192.168.1.42:52341'</C.s>{`,
+  proto:   `}<C.s>'HTTPS'</C.s>{`,
+  scope:   [`}<C.s>'l7'</C.s>{`, `}<C.s>'behavioral'</C.s>{`],
+  policy:  `}<C.s>'visibility.default'</C.s>{`,
 })
 
-`}<C.k>return</C.k>{` { id: token.alias }`}
+`}<C.k>return</C.k>{` { app: result.label }`}
         </CodePanel>
       </div>
       <div style={{

@@ -39,14 +39,14 @@ const FinalCTA = () => (
       </svg>
       <div style={{ position: 'relative' }}>
         <div className="mono" style={{ fontSize: 12, color: 'var(--cyan)', letterSpacing: '0.18em', marginBottom: 18 }}>
-          ◇ READY WHEN YOU ARE
+          ◇ READY TO DEPLOY
         </div>
         <h3 style={{ fontSize: 56, lineHeight: 1.0, letterSpacing: '-0.03em', fontWeight: 600, margin: '0 0 16px', maxWidth: 780 }}>
-          More of the data <span style={{ color: '#5b6065' }}>you want.</span><br/>
-          Less of the risk <span style={{ color: 'var(--cyan)' }}>you don't.</span>
+          More visibility. More control. <span style={{ color: '#5b6065' }}>More</span>{' '}
+          <span style={{ color: 'var(--cyan)' }}>resilience.</span>
         </h3>
         <p style={{ fontSize: 16, color: '#a8acb0', maxWidth: 520, margin: '0 0 28px' }}>
-          Start a free 14‑day vault or talk to our solutions team about your specific compliance program.
+          See how SechPoint can help secure, optimize, and operationalize your network intelligence stack.
         </p>
         <div style={{ display: 'flex', gap: 10 }}>
           <button style={{
@@ -68,7 +68,7 @@ const FinalCTA = () => (
             fontWeight: 600,
             fontSize: 15,
             border: '1px solid #2a2e32',
-          }}>Start free</button>
+          }}>Request a demo</button>
         </div>
       </div>
     </div>

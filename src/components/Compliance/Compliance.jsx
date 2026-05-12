@@ -1,12 +1,12 @@
 import { Arrow, ShieldFill } from '../../icons';
 
 const items = [
-  { label: 'PCI DSS', sub: 'LEVEL 1',       bg: 'linear-gradient(145deg,#9cf7e9,#22e0c8)' },
-  { label: 'SOC 2',   sub: 'TYPE II',        bg: 'linear-gradient(145deg,#d9efe6,#9cd9c4)' },
-  { label: 'HIPAA',   sub: 'COMPLIANT',      bg: 'linear-gradient(145deg,#cfe7ff,#7fbcff)' },
-  { label: 'ISO',     sub: '27001 · 27701',  bg: 'linear-gradient(145deg,#e0d8ff,#b8a8ff)' },
-  { label: 'FedRAMP', sub: 'MODERATE',       bg: 'linear-gradient(145deg,#ffe2c8,#ffb98a)' },
-  { label: 'GDPR',    sub: 'EU · UK',        bg: 'linear-gradient(145deg,#ffd9d9,#ffa0a0)' },
+  { label: 'Inline',   sub: 'DEPLOYMENT',    bg: 'linear-gradient(145deg,#9cf7e9,#22e0c8)' },
+  { label: 'Out-Path', sub: 'DEPLOYMENT',    bg: 'linear-gradient(145deg,#d9efe6,#9cd9c4)' },
+  { label: '24/7',     sub: 'SLA SUPPORT',   bg: 'linear-gradient(145deg,#cfe7ff,#7fbcff)' },
+  { label: 'Weekly',   sub: 'SIG UPDATES',   bg: 'linear-gradient(145deg,#e0d8ff,#b8a8ff)' },
+  { label: 'RBAC',     sub: 'ACCESS CONTROL',bg: 'linear-gradient(145deg,#ffe2c8,#ffb98a)' },
+  { label: 'ISO',      sub: '27001 · NIS2',  bg: 'linear-gradient(145deg,#ffd9d9,#ffa0a0)' },
 ];
 
 const Compliance = () => (
@@ -19,13 +19,13 @@ const Compliance = () => (
     }}>
       <div style={{ textAlign: 'center', marginBottom: 36 }}>
         <div className="mono" style={{ fontSize: 11, letterSpacing: '0.18em', color: 'var(--muted)', marginBottom: 14 }}>
-          BUILT FOR DEVELOPERS · LOVED BY SECURITY TEAMS
+          BUILT FOR OPERATORS · TRUSTED BY SECURITY TEAMS
         </div>
         <h3 style={{ fontSize: 40, lineHeight: 1.1, letterSpacing: '-0.025em', fontWeight: 600, margin: '0 0 14px' }}>
-          Security and privacy<br/>are built into our DNA.
+          Security, control, and compliance<br/>by design.
         </h3>
         <p style={{ fontSize: 15, color: 'var(--muted)', maxWidth: 520, margin: '0 auto 22px' }}>
-          Sechpoint is engineered with a security‑first mindset — every transaction, key, and access decision is signed, logged, and reproducible.
+          SechPoint is built for environments that demand visibility, regulatory alignment, traffic control, cyber resilience, and operational continuity across large-scale networks.
         </p>
         <button style={{
           padding: '10px 18px',
@@ -36,7 +36,7 @@ const Compliance = () => (
           display: 'inline-flex',
           gap: 6,
           alignItems: 'center',
-        }}>Read our trust report <Arrow/></button>
+        }}>Learn more <Arrow/></button>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6,1fr)', gap: 14 }}>
         {items.map((it, i) => (

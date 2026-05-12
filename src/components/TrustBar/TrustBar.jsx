@@ -1,4 +1,4 @@
-const logos = ['NORTHWIND','HELIOS BANK','◇ Meridian','ATLAS · health','Vertex Labs','PARALLAX'];
+const logos = ['NEXTEL CORP','SYNAPSE ISP','◇ Meridian','STRATOS · cyber','Orbital Labs','HELIX'];
 
 const TrustBar = () => (
   <section style={{ background: 'var(--ink)', color: '#cdd2d6' }}>
@@ -12,7 +12,7 @@ const TrustBar = () => (
       alignItems: 'center',
     }}>
       <div style={{ fontSize: 13, color: '#8a8f95', lineHeight: 1.4 }}>
-        Security‑first teams build<br/>on the Sechpoint platform
+        Built for telecom, ISP,<br/>and sovereign cyber environments.
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 24, flexWrap: 'wrap', opacity: 0.85 }}>
         {logos.map((l, i) => (

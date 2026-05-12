@@ -12,11 +12,11 @@ const Quote = () => (
         margin: '24px 0 36px',
         textWrap: 'pretty',
       }}>
-        "We replaced three vendors and a homegrown HSM with Sechpoint in nine weeks. Our auditors finished a quarter early — and our engineers stopped <span style={{ color: 'var(--cyan)' }}>building crypto on the side of their desk</span>."
+        "SechPoint gave us the visibility and control we needed across high-volume traffic, while strengthening our ability to detect threats, manage policy, and <span style={{ color: 'var(--cyan)' }}>improve subscriber-level intelligence at scale</span>."
       </p>
-      <div style={{ fontWeight: 600, fontSize: 15 }}>Lena Okafor</div>
+      <div style={{ fontWeight: 600, fontSize: 15 }}>Khalid Al-Rashid</div>
       <div className="mono" style={{ fontSize: 12, color: '#8a8f95', marginTop: 4, letterSpacing: '0.04em' }}>
-        VP SECURITY ENGINEERING · NORTHWIND
+        CHIEF NETWORK OFFICER · NEXTEL CORP
       </div>
     </div>
   </section>

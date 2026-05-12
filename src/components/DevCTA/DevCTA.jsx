@@ -1,13 +1,13 @@
 import { Arrow, Cube, Scan, Globe, Key, Pulse, Lock, Bolt } from '../../icons';
 
 const tiles = [
-  ['Vault SDKs',       'tokenize · reveal · search'],
-  ['Sechpoint CLI',    'provision · rotate · plan'],
-  ['Reverse Proxies',  'no‑code data interception'],
-  ['Policy Engine',    'as‑code, signed, versioned'],
-  ['Detection API',    'stream anomalies to SIEM'],
-  ['HSM Service',      'customer‑managed roots'],
-  ['Identity Bridges', 'SCIM · SAML · OIDC'],
+  ['AIG Appliances',      'inline · out-of-path'],
+  ['DPI Engine',          'classify · analyze · export'],
+  ['Command Center',      'monitor · orchestrate · alert'],
+  ['Subscriber Analytics','imsi · imei · msisdn'],
+  ['Threat Intelligence', 'ip · url · behavioral'],
+  ['Policy Control',      'rate-limit · shape · enforce'],
+  ['Compliance Filtering','filter · audit · report'],
 ];
 
 const tileIcons = [<Cube/>, <Scan/>, <Globe/>, <Key/>, <Pulse/>, <Lock/>, <Bolt/>];
@@ -25,13 +25,13 @@ const DevCTA = () => (
       <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 40, alignItems: 'center' }}>
         <div>
           <div className="mono" style={{ fontSize: 11, color: 'var(--cyan)', letterSpacing: '0.18em', marginBottom: 14 }}>
-            ◇ DEVELOPER TOOLS
+            ◇ UNIFIED PLATFORM
           </div>
           <h3 style={{ fontSize: 42, lineHeight: 1.05, letterSpacing: '-0.02em', fontWeight: 600, margin: '0 0 16px' }}>
-            Implementing a<br/>data vault
+            Implementing network<br/>intelligence at scale
           </h3>
           <p style={{ fontSize: 15, color: '#a8acb0', maxWidth: 420, margin: '0 0 22px' }}>
-            Explore our APIs, SDKs, and docs to start building in minutes. The same primitives our team uses in production.
+            Explore how AIG hardware, Command Center, DPI analytics, and Aleria-driven intelligence work together across telecom and sovereign cyber environments.
           </p>
           <button style={{
             background: 'var(--cyan)',
@@ -43,7 +43,7 @@ const DevCTA = () => (
             display: 'inline-flex',
             alignItems: 'center',
             gap: 8,
-          }}>Developer docs <Arrow/></button>
+          }}>Explore platform <Arrow/></button>
         </div>
         <div style={{ position: 'relative', height: 276 }}>
           <svg viewBox="0 0 360 240" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>

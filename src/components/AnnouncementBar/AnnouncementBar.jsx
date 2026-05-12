@@ -18,7 +18,7 @@ const AnnouncementBar = () => (
       letterSpacing: '0.08em',
       marginRight: 10,
     }}>NEW</span>
-    Sechpoint v4 ships post&#8209;quantum key wrapping in beta.{' '}
+    SechPoint DPI Engine 4.0 ships real&#8209;time encrypted traffic intelligence in beta.{' '}
     <a style={{ borderBottom: '1px solid currentColor', paddingBottom: 1 }}>Read the changelog →</a>
   </div>
 );

@@ -1,0 +1,35 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Vite dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "5173"],
+      "port": 5173
+    },
+    {
+      "name": "serve (npx)",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", ".", "-p", "3000"],
+      "port": 3000
+    },
+    {
+      "name": "http-server (npx)",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["http-server", ".", "-p", "5000", "--cors", "-c-1"],
+      "port": 5000
+    },
+    {
+      "name": "Python http.server",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8000"],
+      "port": 8000
+    },
+    {
+      "name": "Cipherline serve",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "/Users/eddie/My Projects/Claude/Secpoint 2", "-p", "3001"],
+      "port": 3001
+    }
+  ]
+}

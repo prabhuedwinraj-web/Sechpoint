@@ -13,7 +13,7 @@ import FinalCTA from './components/FinalCTA/FinalCTA'
 import Footer from './components/Footer/Footer'
 
 export default function App() {
-  const [active, setActive] = useState('fin')
+  const [active, setActive] = useState('tel')
   return (
     <div>
       <SechpointGradDefs />

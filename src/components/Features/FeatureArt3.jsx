@@ -14,10 +14,10 @@ const FeatureArt3 = () => {
         transition: `transform 0.9s ${ease}`,
       }}>
         <CodePanel title="threats.log" lang="log" rotate={-2}>
-{`[`}<C.c>{`02:14:08`}</C.c>{`] `}<C.f>detect</C.f>{`  anomaly 3.2σ — svc.exports
-[`}<C.c>{`02:14:08`}</C.c>{`] `}<C.f>scope </C.f>{` 18,402 rows, fingerprint=pii
+{`[`}<C.c>{`02:14:08`}</C.c>{`] `}<C.f>detect</C.f>{`  anomaly 3.2σ — svc.flows
+[`}<C.c>{`02:14:08`}</C.c>{`] `}<C.f>scope </C.f>{` 18,402 flows, risk=high
 [`}<C.c>{`02:14:09`}</C.c>{`] `}<C.k>action</C.k>{` quarantine + alert oncall
-[`}<C.c>{`02:14:09`}</C.c>{`] `}<C.k>action</C.k>{` rotate(api_key `}<C.s>'svc.exports'</C.s>{`)
+[`}<C.c>{`02:14:09`}</C.c>{`] `}<C.k>action</C.k>{` block(ip `}<C.s>'203.0.113.42'</C.s>{`)
 [`}<C.c>{`02:14:11`}</C.c>{`] `}<C.f>verify</C.f>{` block confirmed · `}<C.n>0 leaks</C.n>{`
 [`}<C.c>{`02:14:12`}</C.c>{`] `}<C.f>page  </C.f>{` security@sechpoint.io ✓`}
         </CodePanel>

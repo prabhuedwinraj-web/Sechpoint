@@ -25,7 +25,7 @@ const Hero = () => (
         marginBottom: 24,
       }}>
         <span style={{ width: 6, height: 6, borderRadius: 99, background: 'var(--cyan-deep)', display: 'inline-block' }}/>
-        DATA SECURITY · v4.0
+        NETWORK INTELLIGENCE · v4.0
       </div>
       <h1 style={{
         fontSize: 76,
@@ -34,7 +34,7 @@ const Hero = () => (
         fontWeight: 600,
         margin: '0 0 22px',
       }}>
-        Built to secure national&#8209;scale{' '}
+        Built to secure and optimize national&#8209;scale{' '}
         <em style={{ fontStyle: 'normal', position: 'relative', display: 'inline-block' }}>
           networks.
           <svg style={{ position: 'absolute', left: -4, right: -4, bottom: -6, width: 'calc(100% + 8px)' }} viewBox="0 0 400 14" preserveAspectRatio="none">
@@ -43,10 +43,10 @@ const Hero = () => (
         </em>
       </h1>
       <p style={{ fontSize: 17, lineHeight: 1.5, color: '#3a3e42', maxWidth: 520, margin: '0 0 28px' }}>
-        More than a vault — Sechpoint tokenizes, encrypts, and brokers access to your most sensitive data so your teams can build on it without ever holding the risk.
+        SechPoint helps telecoms, ISPs, and national cyber teams gain real-time visibility, control encrypted traffic, strengthen cyber defense, and improve subscriber experience through DPI-powered intelligence.
       </p>
       <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 28px', display: 'flex', gap: 18, flexWrap: 'wrap' }}>
-        {['Cut audit scope by 92%','Stop credential leaks','Deploy on your cloud'].map((t, i) => (
+        {['High-speed AIML-powered DPI','Cybersecurity and IP/URL intelligence','Subscriber analytics and traffic orchestration'].map((t, i) => (
           <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14 }}>
             <span style={{
               width: 18,
@@ -82,7 +82,7 @@ const Hero = () => (
           fontWeight: 600,
           fontSize: 15,
           border: '1px solid var(--ink)',
-        }}>Start building</button>
+        }}>Explore platform</button>
       </div>
     </div>
     <HeroArt/>

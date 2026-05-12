@@ -1,11 +1,11 @@
 import Logo from '../Logo/Logo';
 
 const cols = [
-  ['Platform',   ['Tokenization vault','Key management','Threat intelligence','Access control','Reverse proxies','Detection API']],
-  ['Developers', ['Documentation','API reference','Quickstarts','Status · 99.999%','GitHub','Changelog']],
-  ['Use cases',  ['Financial services','Healthcare','SaaS & AI','Government','Insurance','Crypto']],
-  ['Company',    ['About','Careers · 12 open','Customers','Newsroom','Contact','Partners']],
-  ['Legal',      ['Trust report','Privacy policy','Terms of service','DPA','Subprocessors','Security']],
+  ['Platform',   ['DPI Engine','AIG Appliances','Command Center','Threat Intelligence','Subscriber Analytics','Policy Control']],
+  ['Developers', ['Documentation','API reference','Integration guides','Status · 99.99%','GitHub','Changelog']],
+  ['Use cases',  ['Telecoms','ISPs','Government','Sovereign Cyber','Enterprise','CERT / SOC']],
+  ['Company',    ['About','Careers · 8 open','Customers','Newsroom','Contact','Partners']],
+  ['Legal',      ['Trust report','Privacy policy','Terms of service','DPA','Certifications','Security']],
 ];
 
 const Footer = () => (
@@ -15,10 +15,10 @@ const Footer = () => (
         <div>
           <Logo/>
           <p style={{ fontSize: 13.5, color: 'var(--muted)', marginTop: 14, maxWidth: 240, lineHeight: 1.5 }}>
-            The data security platform that lets builders work with sensitive information — safely.
+            The network intelligence platform built for telecoms, ISPs, and sovereign cyber environments.
           </p>
           <div style={{ display: 'flex', gap: 8, marginTop: 18 }}>
-            {['PCI · L1','SOC 2','HIPAA','ISO 27001'].map((b, i) => (
+            {['24/7 SLA','INLINE','AIML DPI','ISO 27001'].map((b, i) => (
               <span key={i} className="mono" style={{
                 fontSize: 10,
                 padding: '4px 8px',

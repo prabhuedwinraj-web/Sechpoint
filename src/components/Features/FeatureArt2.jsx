@@ -20,11 +20,11 @@ const FeatureArt2 = () => {
         transform: visible ? 'translateY(0)' : 'translateY(60px)',
         transition: `transform 0.9s ${ease} 0.18s`,
       }}>
-        <CodePanel title="policy.cipher" rotate={1.8} lang="cipher">
-{`policy `}<C.f>kyc.read.only</C.f>{` {
-  `}<C.k>match</C.k>{` token.scope == [`}<C.s>'pii'</C.s>{`]
-  `}<C.k>allow</C.k>{` reveal `}<C.c>{`// just-in-time`}</C.c>{`
-    `}<C.k>when</C.k>{` actor in `}<C.f>group</C.f>{`(`}<C.s>'svc.kyc'</C.s>{`)
+        <CodePanel title="policy.rule" rotate={1.8} lang="cipher">
+{`policy `}<C.f>visibility.default</C.f>{` {
+  `}<C.k>match</C.k>{` flow.scope == [`}<C.s>'l7'</C.s>{`]
+  `}<C.k>allow</C.k>{` classify `}<C.c>{`// real-time`}</C.c>{`
+    `}<C.k>when</C.k>{` actor in `}<C.f>group</C.f>{`(`}<C.s>'svc.dpi'</C.s>{`)
     `}<C.k>and</C.k>{` request.mfa == `}<C.n>true</C.n>{`
   `}<C.k>deny</C.k>{` export, copy, log_plaintext
   `}<C.k>emit</C.k>{` audit.`}<C.f>signed</C.f>{`(`}<C.s>'siem'</C.s>{`)
