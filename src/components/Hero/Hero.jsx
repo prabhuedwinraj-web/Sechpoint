@@ -11,7 +11,7 @@ const ARTS = [
 ];
 
 const Hero = () => {
-  const [artKey, setArtKey] = useState('current');
+  const [artKey, setArtKey] = useState('opt1');
 
   return (
     <section style={{
