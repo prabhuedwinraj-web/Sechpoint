@@ -15,7 +15,7 @@ const tileIcons = [<Cube/>, <Scan/>, <Globe/>, <Key/>, <Pulse/>, <Lock/>, <Bolt/
 const DevCTA = () => (
   <section style={{ maxWidth: 1240, margin: '-140px auto 40px', padding: '0 24px', position: 'relative', zIndex: 1 }}>
     <div style={{
-      background: 'var(--ink)',
+      background: '#222624',
       borderRadius: 18,
       padding: '48px 48px 36px',
       color: '#e7eaee',
