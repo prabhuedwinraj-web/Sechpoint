@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import { Arrow, Check } from '../../icons';
-import HeroArt from './HeroArt';
 import HeroArtOption1 from './HeroArtOption1';
 import HeroArtOption2 from './HeroArtOption2';
 
 const ARTS = [
-  { key: 'current', label: 'Current' },
-  { key: 'opt1',    label: 'Option 1' },
-  { key: 'opt2',    label: 'Option 2' },
+  { key: 'opt1', label: 'Option 1' },
+  { key: 'opt2', label: 'Option 2' },
 ];
 
 const Hero = () => {
@@ -102,8 +100,7 @@ const Hero = () => {
           ))}
         </div>
 
-        {artKey === 'current' && <HeroArt/>}
-        {artKey === 'opt1'    && <HeroArtOption1/>}
+        {artKey === 'opt1' && <HeroArtOption1/>}
         {artKey === 'opt2'    && <HeroArtOption2/>}
       </div>
     </section>
